@@ -153,6 +153,79 @@
             </div>
         </div>
 
+
+
+        <main id="main-template">
+            <!-- Definir la plantilla dentro del HTML -->
+        <template id="main-content-template">
+          <div class="main-content">
+            <div class="info">
+              <h1>Mi Banquito</h1>
+              <p>Bienvenido a su banco en línea</p>
+              <img src="https://media-public.canva.com/5_kDM/MAEa5h5_kDM/1/t.png" alt="Logo Banco Pichincha">
+            </div>
+            <div class="login">
+              <form action="#" method="post">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+                <div class="forgot-password">¿Olvidó su contraseña?</div>
+              </form>
+            </div>
+          </div>
+        </template>
+        </main>
+      
+      
+      
+        
+        <footer class="footer">
+          <template id="footer-template">
+            <div class="footer__header"></div>
+          </template>
+        </footer>
+      
+        <footer class="footer">
+          <template id="footer-content-template">
+            <section class="footer-section">
+              <h2 class="section-title"></h2>
+            </section>
+          </template>
+          <div id="footer-container"></div>
+      
+          <template id="custom-footer-template">
+            <div class="custom-footer">
+              <div class="seguridad-reclamos">
+      
+                <a href="/producto-4" target="_self" >Seguridad y Reclamos</a>
+                <p><a href="/producto-4" target="_self" >Tipos de seguridad</a></p>
+              </div>
+              <div class="banco">
+                <p>Mi Banquito</p>
+              </div>
+            </div>
+          </template>
+        </footer>
+      
+      
+        
+        <footer class="mi-footer">
+            <template id="social-icons-template">
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </template>
+          
+            <template id="legal-info-template">
+              <div class="legal-info">
+                <a href="#">Términos y condiciones</a> | <a href="#">Aviso legal</a>
+              </div>
+            </template>
+          </footer>
+
+
         <script>
             function scrollCarousel(direction) {
                 const carousel = document.querySelector('.carousel-card');
@@ -163,6 +236,7 @@
 
         <script src="../components/header.js"></script>
         <script src="../components/card.js"></script>
+        <script src="../components/Footer.js"></script>
 </body>
 
 </html>
