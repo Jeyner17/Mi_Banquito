@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones en línea</title>
     <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
@@ -13,7 +14,48 @@
 
     <header>
         <!--Mateo-->
+        <div class="header-container">
+            <div class="menu">
+                <button id="menu-button">Menú</button>
+                <nav id="dropdown-menu" class="hidden">
+                    <template id="menu-template">
+                        <button id="close-menu">&times;</button>
+                        <ul>
+                            <li>Personas</li>
+                            <li>Empresas</li>
+                            <li>Pymes</li>
+                            <li>Microempresarios</li>
+                            <li>Cuentas</li>
+                            <li>Tarjetas</li>
+                            <li>Créditos</li>
+                            <li>Inversiones</li>
+                            <li>Servicios</li>
+                        </ul>
+                    </template>
+                </nav>
+            </div>
+            <div class="logo">
+                <img src="Diseño sin título/2.png" alt="Banco Pichincha">
+            </div>
+            <div class="access">
+                <button>Acceso clientes</button>
+            </div>
+        </div>
     </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <template id="carousel-template">
+                <div class="carousel-slide">
+                    <img src="" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+            </template>
+            <!-- Slides serán insertados aquí por JavaScript -->
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
 
     <main>
         <section>
@@ -105,6 +147,7 @@
                 </div>
 
                 <script src="../components/card.js"></script>
+                <script src="../components/Header.js"></script>
                 <script>
                     function scrollCarousel(direction) {
                         const carousel = document.querySelector('.carousel');
