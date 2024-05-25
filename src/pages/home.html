@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones en línea</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
-    <template id="solucion-card-template">
-        <style>
-            :host {
-                display: block;
-                font-family: Arial, sans-serif;
-                margin: 10px;
-            }
+
+    <header>
+        <!--Mateo-->
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <!--Jeyner-->
+
+
+                <template id="solucion-card-template">
+                    <style>
+                        :host {
+                            display: block;
+                            font-family: Arial, sans-serif;
+                            margin: 10px;
+                        }
+
+                        .card {
+                            background-color: #f9f9f9;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 8px;
+                            width: 150px;
+                            padding: 20px;
+                            text-align: center;
+                        }
+
+                        .card img {
+                            width: 40px;
+                            height: 40px;
+                            margin-bottom: 10px;
+                        }
+
+                        .card-title {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .card-description {
+                            font-size: 12px;
+                            color: #666;
+                            margin-bottom: 10px;
+                        }
+
+                        .card-link {
+                            font-size: 14px;
+                            color: #0066cc;
+                            text-decoration: none;
+                        }
+
+                        .card-link:hover {
+                            text-decoration: underline;
+                        }
+                    </style>
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-title"></div>
+                        <div class="card-description"></div>
+                        <a href="#" class="card-link"></a>
+                    </div>
+                </template>
+
+                <div class="container">
+                    <div class="title">Soluciones en línea</div>
+                    <div class="subtitle">Todo lo que necesitas sin salir de casa.</div>
+                    <div class="carousel">
+                        <solucion-card icono="icono-inversiones.png" titulo="Inversiones"
+                            descripcion="Simula tu inversión con un mejor interés en línea." link="#"
+                            link-texto="Simular inversión"></solucion-card>
+                        <solucion-card icono="icono-prestamo.png" titulo="Préstamo"
+                            descripcion="Solicita tu préstamo y obtén una respuesta inmediata." link="#"
+                            link-texto="Solicitar préstamo"></solucion-card>
+                        <solucion-card icono="icono-tarjeta.png" titulo="Tarjeta de crédito"
+                            descripcion="Solicita tu nueva tarjeta en pocos pasos." link="#"
+                            link-texto="Solicitar tarjeta"></solucion-card>
+                        <solucion-card icono="icono-seguro.png" titulo="Seguro"
+                            descripcion="Obtén el mejor seguro para ti y tu familia." link="#"
+                            link-texto="Contratar seguro"></solucion-card>
+                        <solucion-card icono="icono-asesoria.png" titulo="Asesoría"
+                            descripcion="Asesoría personalizada para tus finanzas." link="#"
+                            link-texto="Solicitar asesoría"></solucion-card>
+                        <solucion-card icono="icono-pagos.png" titulo="Pagos en línea"
+                            descripcion="Realiza todos tus pagos desde casa." link="#"
+                            link-texto="Pagar ahora"></solucion-card>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="control" onclick="scrollCarousel('left')"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="control" onclick="scrollCarousel('right')"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <script src="../components/card.js"></script>
+                <script>
+                    function scrollCarousel(direction) {
+                        const carousel = document.querySelector('.carousel');
+                        const scrollAmount = direction === 'left' ? -150 : 150;
+                        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                </script>
+            </div>
+        </section>
+    </main>
+
     
-            .card {
-                background-color: #f9f9f9;
-                border: 1px solid #e0e0e0;
-                border-radius: 8px;
-                width: 150px;
-                padding: 20px;
-                text-align: center;
-            }
-    
-            .card img {
-                width: 40px;
-                height: 40px;
-                margin-bottom: 10px;
-            }
-    
-            .card-title {
-                font-size: 14px;
-                margin-bottom: 10px;
-            }
-    
-            .card-description {
-                font-size: 12px;
-                color: #666;
-                margin-bottom: 10px;
-            }
-    
-            .card-link {
-                font-size: 14px;
-                color: #0066cc;
-                text-decoration: none;
-            }
-    
-            .card-link:hover {
-                text-decoration: underline;
-            }
-        </style>
-        <div class="card">
-            <img src="" alt="">
-            <div class="card-title"></div>
-            <div class="card-description"></div>
-            <a href="#" class="card-link"></a>
-        </div>
-    </template>
-    
-    <div class="container">
-        <div class="title">Soluciones en línea</div>
-        <div class="subtitle">Todo lo que necesitas sin salir de casa.</div>
-        <div class="carousel">
-            <solucion-card icono="icono-inversiones.png" titulo="Inversiones" descripcion="Simula tu inversión con un mejor interés en línea." link="#" link-texto="Simular inversión"></solucion-card>
-            <solucion-card icono="icono-prestamo.png" titulo="Préstamo" descripcion="Solicita tu préstamo y obtén una respuesta inmediata." link="#" link-texto="Solicitar préstamo"></solucion-card>
-            <solucion-card icono="icono-tarjeta.png" titulo="Tarjeta de crédito" descripcion="Solicita tu nueva tarjeta en pocos pasos." link="#" link-texto="Solicitar tarjeta"></solucion-card>
-            <solucion-card icono="icono-seguro.png" titulo="Seguro" descripcion="Obtén el mejor seguro para ti y tu familia." link="#" link-texto="Contratar seguro"></solucion-card>
-            <solucion-card icono="icono-asesoria.png" titulo="Asesoría" descripcion="Asesoría personalizada para tus finanzas." link="#" link-texto="Solicitar asesoría"></solucion-card>
-            <solucion-card icono="icono-pagos.png" titulo="Pagos en línea" descripcion="Realiza todos tus pagos desde casa." link="#" link-texto="Pagar ahora"></solucion-card>
-        </div>
-        <div class="carousel-controls">
-            <button class="control" onclick="scrollCarousel('left')"><i class="fas fa-chevron-left"></i></button>
-            <button class="control" onclick="scrollCarousel('right')"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </div>
-    
-<script src="../components/card.js"></script>
-<script>
-    function scrollCarousel(direction) {
-        const carousel = document.querySelector('.carousel');
-        const scrollAmount = direction === 'left' ? -150 : 150;
-        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-</script>
+    <footer>
+        <!--Mateo-->
+    </footer>
 
 </body>
+
 </html>

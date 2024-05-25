@@ -17,7 +17,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 70%;
     overflow: hidden;
-    position: relative; /* Añadido para el posicionamiento absoluto de los controles */
+    position: relative; 
 }
 
 .title {
@@ -33,7 +33,7 @@ body {
 
 .carousel {
     display: flex;
-    overflow-x: hidden; /* Cambiado a hidden para eliminar la barra deslizante */
+    overflow-x: hidden; 
     padding: 10px;
 }
 
@@ -76,14 +76,14 @@ body {
 }
 
 .carousel-controls {
-    position: absolute; /* Añadido para el posicionamiento absoluto */
-    left: 0; /* Añadido para alinear a la izquierda */
-    right: 0; /* Añadido para alinear a la derecha */
-    margin: auto; /* Añadido para centrar horizontalmente */
-    bottom: 125px; /* Añadido para establecer el margen inferior */
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    bottom: 125px; 
     display: flex;
-    justify-content: space-between; /* Añadido para espaciar los controles */
-    align-items: center; /* Añadido para centrar verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .carousel-controls .control {
@@ -92,7 +92,7 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: #0066cc;
-    margin: 0 10px; /* Espacio entre los controles */
+    margin: 0 10px; 
 }
 
 .carousel-controls .control:hover {
