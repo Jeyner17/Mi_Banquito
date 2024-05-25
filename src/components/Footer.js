@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Agregar imagen al encabezado
     const image = document.createElement('img');
-    image.width = 340;
-    image.height = 20;
+    image.width = 40;
+    image.height = 40;
     image.src = "../assets/images/logo_color.png";
     image.alt = "Logo Banco Pichincha";
     image.classList.add('responsive-logo'); // Agrega la clase para hacer el logo responsive

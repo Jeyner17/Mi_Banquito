@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const dropdownMenu = document.getElementById('dropdown-menu');
-    const menuTemplate = document.getElementById('menu-template').content;
-
-    // Insertar el contenido del menú desde el template
-    dropdownMenu.appendChild(document.importNode(menuTemplate, true));
-
     const closeMenuButton = document.getElementById('close-menu');
 
     menuButton.addEventListener('click', () => {
@@ -17,23 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const carouselContainer = document.querySelector('.carousel-container');
-    const carouselTemplate = document.getElementById('carousel-template').content;
-    
-    // Datos del carrusel
-    const carouselData = [
-        { src: '../assets/images/img_1.jpg'},
-        { src: '../assets/images/img_2.jpg'},
-        { src: '../assets/images/img_3.webp'}
-    ];
-
-    // Crear slides del carrusel desde el template
-    carouselData.forEach(data => {
-        const slide = document.importNode(carouselTemplate, true);
-        slide.querySelector('img').src = data.src;
-        slide.querySelector('.carousel-caption').textContent = data.caption;
-        carouselContainer.appendChild(slide);
-    });
-
     let currentSlide = 0;
 
     function showSlide(index) {
