@@ -6,205 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones en línea</title>
     <link rel="stylesheet" href="../css/card.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../css/footer.css">
-=======
-    <link rel="stylesheet" href="../css/header.css">
->>>>>>> 0d67ac27e1b1570e343bd223e9e8830ae9052f9d
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-
+    <!--Inicio: Mateo Beltral -->
     <header>
-        <!--Mateo-->
-        <div class="header-container">
-            <div class="menu">
-                <button id="menu-button">Menú</button>
-                <nav id="dropdown-menu" class="hidden">
-                    <template id="menu-template">
-                        <button id="close-menu">&times;</button>
-                        <ul>
-                            <li>Personas</li>
-                            <li>Empresas</li>
-                            <li>Pymes</li>
-                            <li>Microempresarios</li>
-                            <li>Cuentas</li>
-                            <li>Tarjetas</li>
-                            <li>Créditos</li>
-                            <li>Inversiones</li>
-                            <li>Servicios</li>
-                        </ul>
-                    </template>
-                </nav>
-            </div>
-            <div class="logo">
-                <img src="Diseño sin título/2.png" alt="Banco Pichincha">
-            </div>
-            <div class="access">
-                <button>Acceso clientes</button>
-            </div>
-        </div>
-    </header>
-
-    <section class="carousel">
-        <div class="carousel-container">
-            <template id="carousel-template">
-                <div class="carousel-slide">
-                    <img src="" alt="">
-                    <div class="carousel-caption"></div>
+        <header>
+            <div class="header-container">
+                <div class="menu">
+                    <button id="menu-button">Menú</button>
+                    <nav id="dropdown-menu" class="hidden">
+                        <template id="menu-template">
+                            <button id="close-menu">&times;</button>
+                            <ul>
+                                <li>Personas</li>
+                                <li>Empresas</li>
+                                <li>Pymes</li>
+                                <li>Microempresarios</li>
+                                <li>Cuentas</li>
+                                <li>Tarjetas</li>
+                                <li>Créditos</li>
+                                <li>Inversiones</li>
+                                <li>Servicios</li>
+                            </ul>
+                        </template>
+                    </nav>
                 </div>
-            </template>
-            <!-- Slides serán insertados aquí por JavaScript -->
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </section>
+                <div class="logo">
+                    <img src="../assets/images/logo_color.png" alt="Banco Pichincha">
+                </div>
+                <div class="access">
+                    <button>Acceso clientes</button>
+                </div>
+            </div>
+        </header>
 
-    <main>
-        <section>
-            <div>
-                <!--Jeyner-->
-
-
-                <template id="solucion-card-template">
-                    <style>
-                        :host {
-                            display: block;
-                            font-family: Arial, sans-serif;
-                            margin: 10px;
-                        }
-
-                        .card {
-                            background-color: #f9f9f9;
-                            border: 1px solid #e0e0e0;
-                            border-radius: 8px;
-                            width: 150px;
-                            padding: 20px;
-                            text-align: center;
-                        }
-
-                        .card img {
-                            width: 40px;
-                            height: 40px;
-                            margin-bottom: 10px;
-                        }
-
-                        .card-title {
-                            font-size: 14px;
-                            margin-bottom: 10px;
-                        }
-
-                        .card-description {
-                            font-size: 12px;
-                            color: #666;
-                            margin-bottom: 10px;
-                        }
-
-                        .card-link {
-                            font-size: 14px;
-                            color: #0066cc;
-                            text-decoration: none;
-                        }
-
-                        .card-link:hover {
-                            text-decoration: underline;
-                        }
-                    </style>
-                    <div class="card">
+        <section class="carousel">
+            <div class="carousel-container">
+                <template id="carousel-template">
+                    <div class="carousel-slide">
                         <img src="" alt="">
-                        <div class="card-title"></div>
-                        <div class="card-description"></div>
-                        <a href="#" class="card-link"></a>
+                        <div class="carousel-caption"></div>
                     </div>
                 </template>
-
-                <div class="container">
-                    <div class="title">Soluciones en línea</div>
-                    <div class="subtitle">Todo lo que necesitas sin salir de casa.</div>
-                    <div class="carousel">
-                        <solucion-card icono="icono-inversiones.png" titulo="Inversiones"
-                            descripcion="Simula tu inversión con un mejor interés en línea." link="#"
-                            link-texto="Simular inversión"></solucion-card>
-                        <solucion-card icono="icono-prestamo.png" titulo="Préstamo"
-                            descripcion="Solicita tu préstamo y obtén una respuesta inmediata." link="#"
-                            link-texto="Solicitar préstamo"></solucion-card>
-                        <solucion-card icono="icono-tarjeta.png" titulo="Tarjeta de crédito"
-                            descripcion="Solicita tu nueva tarjeta en pocos pasos." link="#"
-                            link-texto="Solicitar tarjeta"></solucion-card>
-                        <solucion-card icono="icono-seguro.png" titulo="Seguro"
-                            descripcion="Obtén el mejor seguro para ti y tu familia." link="#"
-                            link-texto="Contratar seguro"></solucion-card>
-                        <solucion-card icono="icono-asesoria.png" titulo="Asesoría"
-                            descripcion="Asesoría personalizada para tus finanzas." link="#"
-                            link-texto="Solicitar asesoría"></solucion-card>
-                        <solucion-card icono="icono-pagos.png" titulo="Pagos en línea"
-                            descripcion="Realiza todos tus pagos desde casa." link="#"
-                            link-texto="Pagar ahora"></solucion-card>
-                    </div>
-                    <div class="carousel-controls">
-                        <button class="control" onclick="scrollCarousel('left')"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="control" onclick="scrollCarousel('right')"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-
-                <script src="../components/card.js"></script>
-                <script src="../components/Header.js"></script>
-                <script>
-                    function scrollCarousel(direction) {
-                        const carousel = document.querySelector('.carousel');
-                        const scrollAmount = direction === 'left' ? -150 : 150;
-                        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-                    }
-                </script>
+                <!-- Slides serán insertados aquí por JavaScript -->
             </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </section>
-    </main>
 
-    
-    <main id="main-template"></main>
-    
+        <!--Fin: Mateo Beltral -->
 
-    <footer class="footer">
-      <template id="footer-template">
-        <div class="footer__header"></div>
-      </template>
-    </footer>
-  
-    <footer class="footer">
-      <template id="footer-content-template">
-        <section class="footer-section">
-          <h2 class="section-title"></h2>
-        </section>
-      </template>
-      <div id="footer-container"></div>
-  
-      <template id="custom-footer-template">
-        <div class="custom-footer">
-          <div class="seguridad-reclamos">
-  
-            <a href="/producto-4" target="_self" >Seguridad y Reclamos</a>
-            <p><a href="/producto-4" target="_self" >Tipos de seguridad</a></p>
-          </div>
-          <div class="banco">
-            <p>Banco Pichincha</p>
-          </div>
+        <div class="container-body">
+            <template id="solucion-card-template">
+                <style>
+                    :host {
+                        display: block;
+                        font-family: Arial, sans-serif;
+                        margin: 10px;
+                    }
+
+                    .card {
+                        background-color: #ffffff;
+                        border: 1px solid #dee3ed;
+                        border-radius: 8px;
+                        width: 155px;
+                        height: 180px;
+                        padding: 24px;
+                        text-align: center;
+                        transition: transform 0.5s;
+                        cursor: pointer;
+                        margin-bottom: 16px;
+                    }
+
+                    .card img {
+                        width: 56px;
+                        height: 56px;
+                        margin-bottom: 10px;
+                    }
+
+                    .card-title {
+                        color: #2c2c30;
+                        font-family: "prelo-semibold";
+                      
+                        font-size: 18px;
+                        margin-bottom: 10px;
+
+                    }
+
+                    .card-description {
+                        font-size: 16px;
+                        color: #6e6e73;
+                        margin-bottom: 10px;
+                        font-family: "prelo-medium";
+                        font-style: normal;
+                    }
+
+                    .card-link {
+                        font-size: 14px;
+                        color: #0066cc;
+                        text-decoration: none;
+                    }
+
+                    .card-link:hover {
+                        text-decoration: underline;
+                    }
+                </style>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-title"></div>
+                    <div class="card-description"></div>
+                    <a href="#" class="card-link"></a>
+                </div>
+            </template>
+
+            <div class="container-card">
+                <div class="title">Soluciones en línea</div>
+                <div class="subtitle">Todo lo que necesitas sin salir de casa.</div>
+                <div class="carousel-card">
+                    <solucion-card icono="../assets/icons/flexible_icon.svg" titulo="Inversiones"
+                        descripcion="Simula tu inversión con un mejor interés en línea." link="#"
+                        link-texto="Simular inversión"></solucion-card>
+                    <solucion-card icono="../assets/icons/credito.svg" titulo="Préstamo"
+                        descripcion="Solicita tu préstamo y obtén una respuesta inmediata." link="#"
+                        link-texto="Solicitar préstamo"></solucion-card>
+                    <solucion-card icono="../assets/icons/tarjeta-de-credito.svg" titulo="Tarjeta de crédito"
+                        descripcion="Solicita tu nueva tarjeta en pocos pasos." link="#"
+                        link-texto="Solicitar tarjeta"></solucion-card>
+                    <solucion-card icono="../assets/icons/seguro-de-vida.svg" titulo="Seguro"
+                        descripcion="Obtén el mejor seguro para ti y tu familia." link="#"
+                        link-texto="Contratar seguro"></solucion-card>
+                    <solucion-card icono="../assets/icons/credito-hipotecario.png" titulo="Asesoría"
+                        descripcion="Asesoría personalizada para tus finanzas." link="#"
+                        link-texto="Solicitar asesoría"></solucion-card>
+                    <solucion-card icono="../assets/icons/tarjeta-de-credito.svg" titulo="Pagos en línea"
+                        descripcion="Realiza todos tus pagos desde casa." link="#"
+                        link-texto="Pagar ahora"></solucion-card>
+                </div>
+                <div class="carousel-controls">
+                    <button class="control" onclick="scrollCarousel('left')"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="control" onclick="scrollCarousel('right')"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
         </div>
-      </template>
-    </footer>
-    <footer class="mi-footer">
-    </footer>
-  
 
+        <script>
+            function scrollCarousel(direction) {
+                const carousel = document.querySelector('.carousel-card');
+                const scrollAmount = direction === 'left' ? -150 : 150;
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        </script>
 
-
-    <script src="../js/footer.js"></script>
- 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="../components/header.js"></script>
+        <script src="../components/card.js"></script>
 </body>
 
 </html>

@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Datos del carrusel
     const carouselData = [
-        { src: 'Diseño sin título/3.png'},
-        { src: 'Diseño sin título/2.png'}
+        { src: '../assets/images/img_1.jpg'},
+        { src: '../assets/images/img_2.jpg'},
+        { src: '../assets/images/img_3.webp'}
     ];
 
     // Crear slides del carrusel desde el template
